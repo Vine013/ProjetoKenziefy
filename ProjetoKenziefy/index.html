@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Kenziefy</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<!--BODY-->
+<body>
+
+        <!--MOST IMPORTANT CONTENT-->
+        <main>
+
+            <!--OPTIONS MENU-->
+            <aside class="SideBarMenu">
+
+                    <!--LOGO-->
+                    <img src="./IMAGES/logo.png" alt="logo">
+
+                    <!--MENU-->
+                    <nav class="Menu">
+
+                        <!--LISTRA DE LINKS-->
+                        <ul class="LinksList">
+                            <li>
+                                <a href="">
+                                    <img src="./IMAGES/icone1.png" alt="Home">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./IMAGES/icone2.png" alt="Browse">
+                                    Browse
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./IMAGES/icone3.png" alt="Liked songs">
+                                    Liked songs
+                                </a>
+                            </li>
+                        </ul>
+
+                    </nav>
+
+            </aside>
+
+            <!--MUSIC LIST SECTIONS-->
+            <section class="MusicsSection"> 
+                <!--CABEÇALHO SESSÃO DE MUSICA-->
+                <header class="Header">
+
+                    <div class="User">
+                        <img src="./IMAGES/user.png" alt="User">
+                        <h2>Vinicius</h2>
+                    </div>
+
+                    <div class="Songs">
+                        <p>3 songs</p>
+                    </div>
+
+                </header>
+
+                <!--LISTA DE MUSICA-->
+                <div class="MusicsList">
+                    <!--BOTÃO DE PAUSE-->
+                    <button id="ButtonPause">Pause</button>
+
+                    <!--CABEÇALHO QUE REPRESENTA AS INFORMAÇÕES DAS MÚSICAS-->
+                    <div class="MusicsHeader">
+                        <p class="Item">TITLE</p>
+                        <p>ARTIST</p>
+                        <p>ALBUM</p>
+                    </div>
+
+                    <!--LISTA DE MÚSICAS-->
+                    <ul class="List">
+                    </ul>
+
+                </div>
+
+            </section>
+
+            <!--PLAYER-->
+            <section class="PlayerArea">
+
+                <audio src="" id="audio"></audio>
+
+                <div class="ActualSong">
+                    <figure class="AlbumImage">
+                        <img src="./IMAGES/album4.png" alt="Album">
+                        <figcaption>Legenda</figcaption>
+                    </figure>
+
+                    <div class="InforAlbum">
+                        <h2>Deus, por favor</h2>
+                        <p>Todo Mundo Odeia o Ig</p>
+                    </div>
+                </div>
+
+                <div class="PlayerAreaControls">
+                    <button id="prev"></button>
+                    <button id="play"></button>
+                    <button id="next"></button>
+                </div>
+
+                <div class="PlayerAreaVolume">
+                    <input type="range" value="1" step="0.1"> 
+                </div>
+
+            </section>
+
+        </main>
+
+        <script type="text/javascript" src="./script.js"></script>
+
+</body>
+
+</html>

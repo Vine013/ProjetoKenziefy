@@ -1,0 +1,203 @@
+/* Anatomia do CSS */
+/*
+
+seletor {
+    propriedade: valor;
+}
+
+*/
+
+/* ALL STYLES */
+body, main, div, section, ul, li, img, figure, p, header, nav, h2, a
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+}
+
+/* BODY */
+body{
+    font-family: "Rubik", sans-serif;
+    background: linear-gradient(0deg, #121212, #121212), #F1F1F1;
+    color: #F1F1F1;
+}
+
+/* MAIN */
+main{
+    display: flex; 
+    flex-wrap: wrap;
+    height: 100vh;
+}
+.SideBarMenu{
+    width: 15.52%;
+    padding: 30px;
+    height: calc(100% - 167px);
+}
+.SideBarMenu > img{
+    margin-bottom: 15px;
+}
+
+/* ASIDE */
+.Menu{}
+
+.LinksList{}
+.LinksList > li{
+    margin-bottom: 17px;
+}
+.LinksList > li > a{
+    color: #F1F1F1;
+    display: flex;
+    align-items: center;}
+.LinksList > li > a > img{
+    width: 28px;
+    margin-right: 20px;
+}
+
+/* MUSICS SECTION */
+.MusicsSection{    
+    width: 80%;
+}
+.Header{
+    background-image: url(./IMAGES/header.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    position: relative;
+    padding: 20px 80px;
+}
+
+/* USER */
+.User{
+    display: flex;
+    align-items: center;
+    float: right;
+}
+.User > img{
+    margin-right: 20px;
+}
+.User > h2{
+    font-weight: lighter;
+}
+
+/* NUMBER OF SONGS */
+.Songs{
+    position: absolute;
+    bottom: 20px;
+    left: 80px;
+}
+.Songs > p{
+    font-size: 28px;
+    font-weight: 350;
+}
+
+/* MUSICS LIST AREA */
+.MusicsList{
+    background-color: #191919;
+    padding: 20px 80px;
+}
+#ButtonPause{
+    background-color: #0047ff;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    border-radius: 7px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* HEADER MUSICS INFO */
+.MusicsHeader{
+    display: flex;
+    border-bottom: 2px solid #646464 ;
+    padding: 8px 65px;
+}
+.MusicsHeader > .Item{
+    width: 60%;
+
+}
+.MusicsHeader > p{
+    width: 25%;
+}
+
+/* MUSICS LIST */
+.List{
+    height: 500px;
+    overflow-y: scroll;
+}
+.List > li{
+    display: flex;
+    border-bottom: 1px solid #646464 ;
+    padding: 8px 65px;
+}
+.List > li > .Item{
+    width: 60%;
+}
+.List > li > p{
+    width: 25%;
+}
+
+/* PLAYER SECTION */
+.PlayerArea{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 80px;
+    height: 100px;
+}
+
+/* ACTUAL SONG INFOS */
+.ActualSong{
+    display: flex;
+    align-items: center;
+}
+
+.AlbumImage{
+    margin-right: 20px;
+}
+.AlbumImage > img{}
+.AlbumImage > figcaption{
+    display: none;
+}
+
+.InfoAlbum{}
+.InfoAlbum > h2{
+    margin-bottom: 8%;
+}
+.InfoAlbum > p{}
+
+/* CONTROL AREA */  
+.PlayerAreaControls{}
+.PlayerAreaControls > button{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    background-position: center;
+    background-size: 23px;
+    background-repeat: no-repeat;
+}
+
+#prev{
+    background-image: url(./IMAGES/previous.png);
+}
+#play{
+    background-image: url(./IMAGES/play.png);
+    background-size: cover;
+    margin: 0 20px;
+}
+#next{
+    background-image: url(./IMAGES/next.png);
+}
+
+.PlayerAreaVolume{
+    background-image: url(./IMAGES/volume.png);
+    background-repeat: no-repeat;
+    background-size: 23px;
+    padding-left: 30px;
+}
